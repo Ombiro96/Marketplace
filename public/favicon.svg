@@ -1,5 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0E1F18"/>
-  <path d="M20 42h-4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h4v-4a2 2 0 0 1 2-2h8l4-4h8a2 2 0 0 1 2 2v4h4a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-4v2a2 2 0 0 1-2 2h-8l-4 4h-8a2 2 0 0 1-2-2v-2z" fill="#FF6A00"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GarageWorld icon">
+  <!-- Orange circle background -->
+  <circle cx="32" cy="32" r="28" fill="#FF6A00" />
+
+  <!-- Bold white S -->
+  <path
+    d="M20 24c2.5-6 10-10 18-8 3.5.9 5.7 2.6 7 4.1m-26 20c2.5 6 10 10 18 8 3.5-.9 5.7-2.6 7-4.1"
+    fill="none"
+    stroke="#ffffff"
+    stroke-width="8"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- Two angled cuts (erase parts of S by overlaying orange bars) -->
+  <rect x="14" y="19" width="36" height="7" rx="3.5" fill="#FF6A00" transform="rotate(-30 32 22.5)" />
+  <rect x="14" y="38" width="36" height="7" rx="3.5" fill="#FF6A00" transform="rotate(30 32 41.5)" />
 </svg>
 

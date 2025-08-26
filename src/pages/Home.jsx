@@ -84,7 +84,7 @@ export default function Home() {
         <section className="py-12 md:py-16 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 text-center">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-green-700 text-center">
                 Welcome to GarageWorld
               </h1>
               <p className="text-slate-600 mt-3 max-w-2xl mx-auto text-center">
@@ -107,8 +107,11 @@ export default function Home() {
               </div>
             </div>
             <div className="relative hidden lg:block">
-              <div className="rounded-2xl border border-slate-200 bg-white shadow-sm h-64"></div>
-              <div className="absolute -right-6 -bottom-6 h-24 w-24 rounded-xl bg-slate-900/10"></div>
+              <img
+                src="https://images.pexels.com/photos/3807277/pexels-photo-3807277.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                alt="Mechanic repairing a car engine"
+                className="rounded-2xl border border-slate-200 bg-white shadow-sm h-64 w-full object-cover"
+              />
             </div>
           </div>
         </section>
