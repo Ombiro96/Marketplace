@@ -185,13 +185,34 @@ export default function Home() {
               {tab === 'location' && (
                 <>
                   <SearchField label="Country">
-                    <select className="h-11 px-3 rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-slate-900/10">
-                      <option>Kenya</option>
-                      <option>Uganda</option>
+                    <select className="h-11 px-3 rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-slate-900/10" defaultValue="USA">
+                      <option value="USA">USA</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Mexico">Mexico</option>
                     </select>
                   </SearchField>
                   <SearchField label="Region/City">
-                    <input className="h-11 px-3 rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-slate-900/10" placeholder="e.g., Nairobi" />
+                    <>
+                      <input list="region-suggestions" className="h-11 px-3 rounded-xl border border-slate-300 bg-white focus:ring-2 focus:ring-slate-900/10" placeholder="e.g., California, New York, Ontario" />
+                      <datalist id="region-suggestions">
+                        {/* USA */}
+                        <option value="California" />
+                        <option value="New York" />
+                        <option value="Texas" />
+                        <option value="Florida" />
+                        <option value="Illinois" />
+                        {/* Canada */}
+                        <option value="Ontario" />
+                        <option value="Quebec" />
+                        <option value="British Columbia" />
+                        <option value="Alberta" />
+                        {/* Mexico */}
+                        <option value="Ciudad de México" />
+                        <option value="Jalisco" />
+                        <option value="Nuevo León" />
+                        <option value="Estado de México" />
+                      </datalist>
+                    </>
                   </SearchField>
                   <SearchField label="Radius (km)">
                     <input type="range" min="5" max="200" className="w-full" />
