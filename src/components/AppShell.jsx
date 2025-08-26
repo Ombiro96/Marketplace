@@ -1,4 +1,5 @@
 import { Link, NavLink } from 'react-router-dom'
+import '@/styles/appShell.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleMobileNav, closeMobileNav } from '@/redux/features/uiSlice'
 
