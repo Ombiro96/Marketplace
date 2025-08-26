@@ -13,7 +13,7 @@ export default function AppShell({ children }) {
   return (
     <div className="min-h-screen flex flex-col bg-[var(--color-bg)] text-[var(--color-text)]">
       <header className="border-b border-[var(--color-border)] bg-[color:var(--color-surface)]/80 backdrop-blur sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="w-full mx-auto px-4 md:px-6">
           <div className="flex h-16 items-center justify-between">
             <Link to="/" className="text-xl font-semibold tracking-tight">
               GarageWorld
@@ -48,13 +48,13 @@ export default function AppShell({ children }) {
       </header>
 
       <main className="flex-1">
-        <div className="max-w-6xl mx-auto p-4">
+        <div className="w-full mx-auto p-4 md:px-6">
           {children}
         </div>
       </main>
 
       <footer className="border-t border-[var(--color-border)] bg-[color:var(--color-surface)]/80">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-300">
+        <div className="w-full mx-auto px-4 md:px-6 py-6 text-sm text-gray-300">
           © {year} GarageWorld
         </div>
       </footer>

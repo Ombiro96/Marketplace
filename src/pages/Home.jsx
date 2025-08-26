@@ -79,19 +79,19 @@ export default function Home() {
   return (
     <AppShell>
       {/* Container */}
-      <div className="container-px max-w-7xl mx-auto">
+      <div className="container-px w-full mx-auto">
         {/* Hero */}
         <section className="py-12 md:py-16 lg:py-20">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 text-center">
                 Welcome to GarageWorld
               </h1>
-              <p className="text-slate-600 mt-3 max-w-2xl">
+              <p className="text-slate-600 mt-3 max-w-2xl mx-auto text-center">
                 Your hub for automotive auctions, junkyards, repair offers, and a powerful
                 marketplace — all in one place.
               </p>
-              <div className="mt-6 flex flex-wrap items-center gap-3">
+              <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <Link
                   to="/marketplace"
                   className="inline-flex items-center justify-center rounded-xl px-4 h-11 bg-slate-900 text-white hover:bg-slate-800"
