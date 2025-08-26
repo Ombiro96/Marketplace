@@ -15,10 +15,10 @@ export default function Login() {
 
   return (
     <AppShell>
-      <div className="max-w-md mx-auto bg-slate-800/40 border border-slate-700 rounded-lg p-6">
+      <div className="max-w-md mx-auto bg-[color:var(--color-surface)]/60 border border-[var(--color-border)] rounded-lg p-6">
         <h1 className="text-xl font-semibold mb-4">Login</h1>
         <button
-          className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md"
+          className="w-full bg-[var(--color-primary)] hover:bg-[var(--color-primary-hover)] text-[var(--color-text-dark)] font-medium py-2 px-4 rounded-md"
           onClick={handleDemo}
         >
           Login as Demo
