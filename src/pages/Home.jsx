@@ -93,13 +93,13 @@ export default function Home() {
               </p>
               <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
                 <Link
-                  to="/marketplace"
+                  to="/services"
                   className="inline-flex items-center justify-center rounded-xl px-4 h-11 bg-slate-900 text-white hover:bg-slate-800"
                 >
                   Search Inventory
                 </Link>
                 <Link
-                  to="/repair"
+                  to="/contact"
                   className="inline-flex items-center justify-center rounded-xl px-4 h-11 border border-slate-300 hover:bg-slate-50"
                 >
                   Post a Problem
@@ -236,7 +236,7 @@ export default function Home() {
             <StepItem title="Choose and proceed" text="Pick the best offer and book the job." icon={<IconHandshake />} />
           </div>
           <div className="mt-8">
-            <Link to="/repair" className="inline-flex items-center justify-center rounded-xl px-5 h-11 bg-slate-900 text-white hover:bg-slate-800">
+            <Link to="/contact" className="inline-flex items-center justify-center rounded-xl px-5 h-11 bg-slate-900 text-white hover:bg-slate-800">
               Post a Problem
             </Link>
           </div>
@@ -251,7 +251,7 @@ export default function Home() {
               <StepItem title="Connect with buyers" text="Answer questions and mark sold when done." icon={<IconHandshake />} />
             </div>
             <div className="mt-8">
-              <Link to="/marketplace" className="inline-flex items-center justify-center rounded-xl px-5 h-11 border border-slate-300 hover:bg-slate-50">
+              <Link to="/services" className="inline-flex items-center justify-center rounded-xl px-5 h-11 border border-slate-300 hover:bg-slate-50">
                 Explore Marketplace
               </Link>
             </div>
