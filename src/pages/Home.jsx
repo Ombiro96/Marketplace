@@ -85,7 +85,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-green-700 text-center">
-                Welcome to GarageWorld
+                Welcome to Garage World
               </h1>
               <p className="text-slate-600 mt-3 max-w-2xl mx-auto text-center">
                 Your hub for automotive auctions, junkyards, repair offers, and a powerful
