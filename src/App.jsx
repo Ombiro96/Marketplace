@@ -1,4 +1,4 @@
-import { RoutedContent } from '@/routes/index'
+import { RoutedContent } from '@/routes/index.jsx'
 
 function App() {
   return <RoutedContent />
