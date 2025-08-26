@@ -20,10 +20,10 @@ export default function AppShell({ children }) {
             </Link>
             <nav className="hidden lg:flex gap-2">
               <NavLink to="/" className={navLinkClass}>Home</NavLink>
-              <NavLink to="/marketplace" className={navLinkClass}>Marketplace</NavLink>
-              <NavLink to="/auctions" className={navLinkClass}>Auctions</NavLink>
-              <NavLink to="/junkyards" className={navLinkClass}>Junkyards</NavLink>
-              <NavLink to="/dashboard" className={navLinkClass}>Dashboard</NavLink>
+              <NavLink to="/about" className={navLinkClass}>About Garage</NavLink>
+              <NavLink to="/services" className={navLinkClass}>Services</NavLink>
+              <NavLink to="/become-member" className={navLinkClass}>Become a Member</NavLink>
+              <NavLink to="/contact" className={navLinkClass}>Contact</NavLink>
             </nav>
             <button
               aria-label="Toggle Menu"
@@ -38,10 +38,14 @@ export default function AppShell({ children }) {
           <div className="lg:hidden border-t border-[var(--color-border)] bg-[var(--color-bg)]">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <NavLink to="/" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Home</NavLink>
-              <NavLink to="/marketplace" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Marketplace</NavLink>
-              <NavLink to="/auctions" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Auctions</NavLink>
-              <NavLink to="/junkyards" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Junkyards</NavLink>
-              <NavLink to="/dashboard" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Dashboard</NavLink>
+              <NavLink to="/about" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>About Garage</NavLink>
+              <NavLink to="/services" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Services</NavLink>
+              <NavLink to="/become-member" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Become a Member</NavLink>
+              <NavLink to="/contact" onClick={() => dispatch(closeMobileNav())} className={({isActive}) => `${navLinkClass({isActive})} block w-full`}>Contact</NavLink>
+              <div className="flex gap-2 pt-2">
+                <Link to="/login" onClick={() => dispatch(closeMobileNav())} className="flex-1 inline-flex items-center justify-center rounded-md px-3 h-10 border border-slate-600 text-slate-100">Login</Link>
+                <Link to="/signup" onClick={() => dispatch(closeMobileNav())} className="flex-1 inline-flex items-center justify-center rounded-md px-3 h-10 bg-[var(--color-primary)] text-[var(--color-text-dark)]">Sign up</Link>
+              </div>
             </div>
           </div>
         )}
