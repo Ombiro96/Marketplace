@@ -1,6 +1,6 @@
 import AppShell from '@/components/AppShell'
 import { useDispatch } from 'react-redux'
-import { loginSuccess } from '@/slices/authSlice'
+import { loginSuccess } from '@/redux/features/authSlice'
 import { useNavigate } from 'react-router-dom'
 
 export default function Login() {

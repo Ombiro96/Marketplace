@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { toggleMobileNav, closeMobileNav } from '@/slices/uiSlice'
+import { toggleMobileNav, closeMobileNav } from '@/redux/features/uiSlice'
 
 export default function AppShell({ children }) {
   const dispatch = useDispatch()
